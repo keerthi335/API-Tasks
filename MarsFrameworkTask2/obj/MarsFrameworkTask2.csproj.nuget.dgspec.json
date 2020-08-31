@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\Testing\\Internship\\Advanced Tasks\\Automation Tasks\\marsframework\\MarsFrameworkTask2\\MarsFrameworkTask2.csproj": {}
+  },
+  "projects": {
+    "G:\\Testing\\Internship\\Advanced Tasks\\Automation Tasks\\marsframework\\MarsFrameworkTask2\\MarsFrameworkTask2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Testing\\Internship\\Advanced Tasks\\Automation Tasks\\marsframework\\MarsFrameworkTask2\\MarsFrameworkTask2.csproj",
+        "projectName": "MarsFrameworkTask2",
+        "projectPath": "G:\\Testing\\Internship\\Advanced Tasks\\Automation Tasks\\marsframework\\MarsFrameworkTask2\\MarsFrameworkTask2.csproj",
+        "packagesPath": "C:\\Users\\kranthi\\.nuget\\packages\\",
+        "outputPath": "G:\\Testing\\Internship\\Advanced Tasks\\Automation Tasks\\marsframework\\MarsFrameworkTask2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kranthi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "G:\\Testing\\Internship\\Advanced Tasks\\Automation Tasks\\marsframework\\MarsFramework\\MarsFramework.csproj": {
+                "projectPath": "G:\\Testing\\Internship\\Advanced Tasks\\Automation Tasks\\marsframework\\MarsFramework\\MarsFramework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "ExtentReports": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[3.141.0, )"
+            },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.3.30, )"
+            },
+            "SpecFlow.NUnit": {
+              "target": "Package",
+              "version": "[3.3.30, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\Testing\\Internship\\Advanced Tasks\\Automation Tasks\\marsframework\\MarsFramework\\MarsFramework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Testing\\Internship\\Advanced Tasks\\Automation Tasks\\marsframework\\MarsFramework\\MarsFramework.csproj",
+        "projectName": "MarsFramework",
+        "projectPath": "G:\\Testing\\Internship\\Advanced Tasks\\Automation Tasks\\marsframework\\MarsFramework\\MarsFramework.csproj"
+      },
+      "frameworks": {
+        "net452": {}
+      }
+    }
+  }
+}

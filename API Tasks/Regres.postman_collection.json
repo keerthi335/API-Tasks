@@ -1,0 +1,359 @@
+{
+	"info": {
+		"_postman_id": "b30a419d-8529-417f-b11d-a8baf68e4c0e",
+		"name": "Regres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET the list of Users",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "43081b57-c5d1-454c-bc27-cda3a2e7bc90",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users?page=2",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://reqres.in/",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 19 Aug 2020 06:10:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cfduid=d559181dfc2730bb7c17e090e6ae049a41597817420; expires=Fri, 18-Sep-20 06:10:20 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=14400"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "HIT"
+						},
+						{
+							"key": "Age",
+							"value": "1817"
+						},
+						{
+							"key": "cf-request-id",
+							"value": "04a6f0131300000b8fd9a5a200000001"
+						},
+						{
+							"key": "Expect-CT",
+							"value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "5c51b5fe8d350b8f-NRT"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <!-- Google Tag Manager -->\n        <script>\n      (function(w, d, s, l, i) {\n        w[l] = w[l] || [];\n        w[l].push({ \"gtm.start\": new Date().getTime(), event: \"gtm.js\" });\n        var f = d.getElementsByTagName(s)[0],\n          j = d.createElement(s),\n          dl = l != \"dataLayer\" ? \"&l=\" + l : \"\";\n        j.async = true;\n        j.src = \"https://www.googletagmanager.com/gtm.js?id=\" + i + dl;\n        f.parentNode.insertBefore(j, f);\n      })(window, document, \"script\", \"dataLayer\", \"GTM-KB622KF\");\n    </script>\n        <!-- End Google Tag Manager -->\n        <meta charset=\"utf-8\" />\n        <meta\n      name=\"viewport\"\n      content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0\"\n    />\n        <meta\n      name=\"description\"\n      content=\"A hosted REST-API ready to respond to your AJAX requests\"\n    />\n        <title>\n      Reqres - A hosted REST-API ready to respond to your AJAX requests\n    </title>\n        <link\n      href=\"//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css\"\n      rel=\"stylesheet\"\n    />\n        <link rel=\"stylesheet\" href=\"/css/app.css\" />\n    </head>\n    <body>\n        <div class=\"header-content\">\n            <header class=\"main-header\">\n                <section class=\"wrap\">\n                    <h1 class=\"logo\">\n                        <a href=\"/\">Req&#8201;|&#8201;Res</a>\n                    </h1>\n                </section>\n            </header>\n            <main class=\"the-sell\">\n                <div class=\"wrap\">\n                    <h2 class=\"tagline\">Test your front-end against a real API</h2>\n                    <section class=\"key-sells\">\n                        <div class=\"sell\">\n                            <div class=\"v-center\">\n                                <h3>Fake data</h3>\n                                <p>\n                  No more tedious sample data creation, we've got it covered.\n                </p>\n                            </div>\n                            <i class=\"fa fa-cloud-download\"></i>\n                        </div>\n                        <div class=\"sell\">\n                            <div class=\"v-center\">\n                                <h3>Real responses</h3>\n                                <p>\n                  Develop with real response codes. GET, POST, PUT &amp; DELETE\n                  supported.\n                </p>\n                            </div>\n                            <i class=\"fa fa-code\"></i>\n                        </div>\n                        <div class=\"sell\">\n                            <div class=\"v-center\">\n                                <h3>Always-on</h3>\n                                <p>\n                  24/7 \n                                    <strong>\n                                        <em>free</em>\n                                    </strong> access in your development\n                  phases. Go nuts.\n                                </p>\n                            </div>\n                            <i class=\"fa fa-toggle-on\"></i>\n                        </div>\n                    </section>\n                    <h2 class=\"tagline\">\n            A hosted REST-API ready to respond to your AJAX requests.\n          </h2>\n                    <div class=\"t-center main-arrow\">\n                        <i class=\"fa fa-arrow-circle-down\"></i>\n                    </div>\n                    <script async type=\"text/javascript\" src=\"//cdn.carbonads.com/carbon.js?serve=CE7D6K3E&placement=reqresin\" id=\"_carbonads_js\"></script>\n                </div>\n            </main>\n        </div>\n        <div class=\"container\">\n            <div class=\"home-content\">\n                <div class=\"wrap\">\n                    <h2 class=\"t-center heading\">Give it a try</h2>\n                    <hr class=\"dark\" />\n                    <section class=\"console try-api-links\" id=\"console\">\n                        <div class=\"endpoints\" data-key=\"endpoints\">\n                            <ul>\n                                <li\n            data-id=\"users\"\n            data-key=\"endpoint\"\n            data-http=\"get\"\n            class=\"active\"\n          >\n                                    <a\n              data-key=\"try-link\"\n            >\n              List users\n            </a>\n                                </li>\n                                <li\n            data-id=\"users-single\"\n            data-key=\"endpoint\"\n            data-http=\"get\"\n          >\n                                    <a\n              data-key=\"try-link\"\n            >\n              Single user\n            </a>\n                                </li>\n                                <li\n            data-id=\"users-single-not-found\"\n            data-key=\"endpoint\"\n            data-http=\"get\"\n          >\n                                    <a\n              data-key=\"try-link\"\n            >\n              Single user not found\n            </a>\n                                </li>\n                                <li\n            data-id=\"unknown\"\n            data-key=\"endpoint\"\n            data-http=\"get\"\n          >\n                                    <a\n              data-key=\"try-link\"\n            >\n              List &lt;resource&gt;\n            </a>\n                                </li>\n                                <li\n            data-id=\"unknown-single\"\n            data-key=\"endpoint\"\n            data-http=\"get\"\n          >\n                                    <a\n              data-key=\"try-link\"\n            >\n              Single &lt;resource&gt;\n            </a>\n                                </li>\n                                <li\n            data-id=\"unknown-single-not-found\"\n            data-key=\"endpoint\"\n            data-http=\"get\"\n          >\n                                    <a\n              data-key=\"try-link\"\n            >\n              Single &lt;resource&gt; not found\n            </a>\n                                </li>\n                                <li\n            data-id=\"post\"\n            data-key=\"endpoint\"\n            data-http=\"post\"\n          >\n                                    <a\n              data-key=\"try-link\"\n            >\n              Create\n            </a>\n                                </li>\n                                <li\n            data-id=\"put\"\n            data-key=\"endpoint\"\n            data-http=\"put\"\n          >\n                                    <a\n              data-key=\"try-link\"\n            >\n              Update\n            </a>\n                                </li>\n                                <li\n            data-id=\"patch\"\n            data-key=\"endpoint\"\n            data-http=\"patch\"\n          >\n                                    <a\n              data-key=\"try-link\"\n            >\n              Update\n            </a>\n                                </li>\n                                <li\n            data-id=\"delete\"\n            data-key=\"endpoint\"\n            data-http=\"delete\"\n          >\n                                    <a\n              data-key=\"try-link\"\n            >\n              Delete\n            </a>\n                                </li>\n                                <li\n            data-id=\"register-successful\"\n            data-key=\"endpoint\"\n            data-http=\"post\"\n          >\n                                    <a\n              data-key=\"try-link\"\n            >\n              Register - successful\n            </a>\n                                </li>\n                                <li\n            data-id=\"register-unsuccessful\"\n            data-key=\"endpoint\"\n            data-http=\"post\"\n          >\n                                    <a\n            data-key=\"try-link\"\n          >\n            Register - unsuccessful\n          </a>\n                                </li>\n                                <li\n            data-id=\"login-successful\"\n            data-key=\"endpoint\"\n            data-http=\"post\"\n          >\n                                    <a\n              data-key=\"try-link\"\n            >\n              Login - successful\n            </a>\n                                </li>\n                                <li data-id=\"login-unsuccessful\" data-key=\"endpoint\" data-http=\"post\">\n                                    <a\n              data-key=\"try-link\"\n            >\n              Login - unsuccessful\n            </a>\n                                </li>\n                                <li\n            data-id=\"delay\"\n            data-key=\"endpoint\"\n            data-http=\"get\"\n          >\n                                    <a\n              data-key=\"try-link\"\n            >\n              Delayed response\n            </a>\n                                </li>\n                            </ul>\n                        </div>\n                        <!--\n\t\t\t-->\n                        <div class=\"output\">\n                            <div class=\"request\">\n                                <p class=\"request-title\">\n                                    <strong\n              >Request \n                                        <i class=\"fa fa-arrow-circle-up\"></i>\n                                        <a\n                class=\"link try-link\"\n                data-key=\"request-output-link\"\n              >\n                                            <span class=\"url\" data-key=\"url\"></span>\n                                        </a>\n                                    </strong>\n                                </p>\n                                <pre data-key=\"output-request\"></pre>\n                            </div>\n                            <!--\n\t\t\t\t-->\n                            <div class=\"response\">\n                                <p class=\"response-title\">\n                                    <strong\n              >Response \n                                        <i class=\"fa fa-arrow-circle-down\"></i>\n                                        <span class=\"response-code\" data-key=\"response-code\"></span\n            >\n                                    </strong>\n                                </p>\n                                <div data-key=\"spinner\" class=\"spinner\" hidden>\n                                    <div class=\"cube1\"></div>\n                                    <div class=\"cube2\"></div>\n                                </div>\n                                <pre data-key=\"output-response\"></pre>\n                            </div>\n                        </div>\n                    </section>\n                    <h2 class=\"t-center heading\">It&rsquo;s all in the details</h2>\n                    <hr class=\"dark\" />\n                    <section class=\"technical-bits\" id=\"technical-bits\">\n                        <ul class=\"iconed\">\n                            <li>\n                                <i class=\"fa fa-cloud\"></i>\n                                <p>\n                                    <strong\n              >Hosted on \n                                        <a href=\"https://www.heroku.com/\">Heroku</a>\n                                    </strong\n            >\n                                </p>\n                                <p>\n            Which means 99.99% Uptime SLA.\n                                    <br />All you need is the base URL,\n            and you're away:\n                                    <br />\n                                    <br />\n                                    <span class=\"code\"\n              >https://reqres.in/api/</span\n            >\n                                    <br />\n                                    <br />The API is CORS enabled, so you can make requests right\n            from the browser, no matter what domain, or even from somewhere like\n            JSFiddle or JSBin.\n                                </p>\n                            </li>\n                            <li>\n                                <i class=\"fa fa-file-code-o\"></i>\n                                <p>\n                                    <strong>Language agnostic</strong>\n                                </p>\n                                <p>\n            A generic API that conforms to REST principles and accepts a content\n            type of \n                                    <br />\n                                    <br />\n                                    <span class=\"code\">application/json</span\n            >\n                                    <br />\n                                    <br />Any endpoint that contains \"&lt;resource&gt;\" can be\n            substituted with anything you supply, ie. \"products\", \"accounts\",\n            etc..the API will just respond with various Pantone colours.\n                                </p>\n                            </li>\n                        </ul>\n                    </section>\n                    <h2 class=\"t-center heading\">Getting started</h2>\n                    <hr class=\"dark\" />\n                    <section class=\"getting-started t-center\" id=\"getting-started\">\n                        <i class=\"fa fa-html5\"></i>\n                        <div class=\"tab\">\n                            <p class=\"tab-title\">jQuery</p>\n                            <p>If you, for example, want to create a fake user:</p>\n                            <pre>$.ajax({\n    url: \"https://reqres.in/api/users\",\n    type: \"POST\",\n    data: {\n        name: \"paul rudd\",\n        movies: [\"I Love You Man\", \"Role Models\"]\n    },\n    success: function(response){\n        console.log(response);\n    }\n});\n\t\t\t\t</pre\n        >\n                            <p>For which the response to this request will be...</p>\n                            <pre>{\n    \"name\":\"paul rudd\",\n    \"movies[]\":[\n        \"I Love You Man\",\n        \"Role Models\"\n    ],\n    \"id\":\"243\",\n    \"createdAt\":\"2014-10-18T12:09:05.255Z\"\n}\n\t\t\t\t</pre\n        >\n                            <p>\n          You can see that the API has sent us back whatever user details we\n          sent it, plus an \n                                <span class=\"code\">id</span> &amp;\n                                <span class=\"code\">createdAt</span> key for our use.\n                            </p>\n                        </div>\n                        <!--\n\t\t\t-->\n                        <div class=\"tab\">\n                            <p class=\"tab-title\">Native JavaScript</p>\n                            <p>\n          If you've already got your own application entities, ie. \"products\",\n          you can send them in the endpoint URL, like so:\n        </p>\n                            <pre>var xhr = new XMLHttpRequest();\nxhr.open(\"GET\", \"https://reqres.in/api/products/3\", true);\nxhr.onload = function(){\n    console.log(xhr.responseText);\n};\nxhr.send();\n\t\t\t\t</pre\n        >\n                            <p>\n          It would be impossible for Reqres to know your application data, so\n          the API will respond from a sample set of Pantone colour data\n        </p>\n                            <pre>{\n    \"data\":{\n        \"id\":3,\n        \"name\":\"true red\",\n        \"year\":2002,\n        \"pantone_value\":\"19-1664\"\n    }\n}\n\t\t\t\t</pre\n        >\n                            <p>\n          It's entirely possible to get sample data into your interface in\n          seconds!\n        </p>\n                        </div>\n                    </section>\n                    <h2 class=\"t-center heading\">Still don't really get it...</h2>\n                    <hr class=\"dark\" />\n                    <section class=\"technical-bits\" id=\"technical-bits\">\n                        <ul class=\"iconed\">\n                            <li>\n                                <i class=\"fa fa-rocket\"></i>\n                                <p>\n                                    <strong>Reqres is a \n                                        <em>real</em> API\n                                    </strong>\n                                </p>\n                                <p>\n            Reqres simulates real application scenarios. If you want to test a\n            user authentication system, Reqres will respond to a successful\n            login/register request with a token for you to identify a sample\n            user, or with a 403 forbidden response to an unsuccessful\n            login/registration attempt. \n                                    <br />\n                                    <br />A common front-end scenario\n            that's easily forgotten is loading states, which can be easily\n            simulated through Reqres by appending\n                                    <br />\n                                    <span class=\"code\"\n              >?delay=&lt;a number of seconds&gt;</span\n            >\n            to any endpoint URL, which will delay the API response time.\n            Animated loading GIFs &amp; SVGs at the ready!\n                                </p>\n                            </li>\n                            <li>\n                                <i class=\"fa fa-bolt\"></i>\n                                <p>\n                                    <strong>Technical demos and tutorials</strong>\n                                </p>\n                                <p>\n            If you're trying to demonstrate a front-end (JavaScript-based)\n            concept, you don't really want the hassle of setting up an API, or\n            even a server (especially during a live workshop or demo).\n                                    <br />\n                                    <br />\n            You can just write your HTML, CSS &amp; JavaScript as usual and send\n            Reqres AJAX requests, which will respond with the expected response\n            codes and output.\n                                </p>\n                            </li>\n                            <li>\n                                <i class=\"fa fa-file-code-o\"></i>\n                                <p>\n                                    <strong>Rapid prototyping of interfaces</strong>\n                                </p>\n                                <p>\n            When prototyping a new interface, you just want an API\n            \n                                    <em>there</em>, with minimal setup effort involved. Normally, I'd\n            point people, who aren't too familiar with backend programming, to\n                                    <a href=\"http://sailsjs.org\">Sailsjs</a> which can auto-generate a\n            REST-API for you from the command line.\n                                    <br />\n                                    <br />\n            However, you will need Node.js installed and some familiarity of how\n            Node.js works. If that sounds like too much hassle and way too\n            daunting, Reqres is just a URL. Sending it an AJAX request is step\n            1...there is no step 2.\n                                </p>\n                            </li>\n                        </ul>\n                    </section>\n                    <h2 class=\"t-center heading\">Peace of mind</h2>\n                    <hr class=\"dark\" />\n                    <section class=\"peace-of-mind\" id=\"peace-of-mind\">\n                        <i class=\"fa fa-lock\"></i>\n                        <p>\n        It might seem \n                            <strong>pretty weird</strong> to be sending your data to a\n        3rd party API, but I can assure you, Reqres\n                            <strong>does not store any of your data</strong> at all. Once you send\n        it to us, we just send it straight back...and then it's gone!\n                        </p>\n                    </section>\n                    <h2 class=\"t-center heading\">Advertising</h2>\n                    <hr class=\"dark\" />\n                    <section class=\"pro\" id=\"pro\">\n                        <p>Do you want to advertise your jobs/tools/software/cats through Reqres to millions of developers every week?\n      Click for more \n                            <a href=\"https://www.dropbox.com/s/2w7gaeydx02qs40/Reqres_Advertising_Proposal.pdf?dl=0\">info [pdf]</a> on the ads.\n                            <a href=\"/cdn-cgi/l/email-protection#8de5e8e1e1e2cdefe8e3e5e2fae9e1e8a3e4e0\">Contact</a> for pricing and questions.\n                        </p>\n                    </section>\n                    <h2 class=\"t-center heading\">Looking for pro features?</h2>\n                    <hr class=\"dark\" />\n                    <section class=\"pro\" id=\"pro\">\n                        <button id=\"trigger-pro\" class=\"large\">Upgrade</button>\n                        <div id=\"pro-form\" class=\"pro-form\">\n                            <h3>\n                                <strong>Ace.</strong> Pro features coming real soon. Stick your email\n          in here to be notified and help build our pro tier.\n                            </h3>\n                            <!-- Begin Mailchimp Signup Form -->\n                            <link\n          href=\"//cdn-images.mailchimp.com/embedcode/classic-10_7.css\"\n          rel=\"stylesheet\"\n          type=\"text/css\"\n        />\n                            <div id=\"mc_embed_signup\">\n                                <form\n            action=\"https://benhowdle.us20.list-manage.com/subscribe/post?u=8c58165749318545a89cd1b21&amp;id=544f278469\"\n            method=\"post\"\n            id=\"mc-embedded-subscribe-form\"\n            name=\"mc-embedded-subscribe-form\"\n            class=\"validate\"\n            target=\"_blank\"\n            novalidate\n          >\n                                    <div id=\"mc_embed_signup_scroll\">\n                                        <div class=\"mc-field-group\">\n                                            <label for=\"mce-EMAIL\">Email Address </label>\n                                            <input\n                  type=\"email\"\n                  value=\"\"\n                  name=\"EMAIL\"\n                  class=\"required email\"\n                  id=\"mce-EMAIL\"\n                />\n                                        </div>\n                                        <div id=\"mce-responses\" class=\"clear\">\n                                            <div\n                  class=\"response\"\n                  id=\"mce-error-response\"\n                  style=\"display:none\"\n                ></div>\n                                            <div\n                  class=\"response\"\n                  id=\"mce-success-response\"\n                  style=\"display:none\"\n                ></div>\n                                        </div>\n                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n                                        <div\n                style=\"position: absolute; left: -5000px;\"\n                aria-hidden=\"true\"\n              >\n                                            <input\n                  type=\"text\"\n                  name=\"b_8c58165749318545a89cd1b21_544f278469\"\n                  tabindex=\"-1\"\n                  value=\"\"\n                />\n                                        </div>\n                                        <div class=\"clear\">\n                                            <input\n                  type=\"submit\"\n                  value=\"Subscribe\"\n                  name=\"subscribe\"\n                  id=\"mc-embedded-subscribe\"\n                  class=\"button\"\n                />\n                                        </div>\n                                    </div>\n                                </form>\n                            </div>\n                            <!--End mc_embed_signup-->\n      \n                        </div>\n                    </section>\n                </div>\n            </div>\n        </div>\n        <footer>\n            <div class=\"wrap\">\n                <hr class=\"dark\" />\n                <p class=\"t-center\">\n          Made for developers and designers by\n          \n                    <a href=\"http://benhowdle.im\">Ben Howdle</a>\n                </p>\n            </div>\n        </footer>\n        <script data-cfasync=\"false\" src=\"/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js\"></script>\n        <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js\"></script>\n        <script src=\"/js/app.js\"></script>\n        <!-- Global site tag (gtag.js) - Google Analytics -->\n        <script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-174008107-1\">\n    </script>\n        <script>\n      window.dataLayer = window.dataLayer || [];\n      function gtag(){dataLayer.push(arguments);}\n      gtag('js', new Date());\n\n      gtag('config', 'UA-174008107-1');\n    </script>\n        <script>\n      (function(i, s, o, g, r, a, m) {\n        i[\"GoogleAnalyticsObject\"] = r;\n        (i[r] =\n          i[r] ||\n          function() {\n            (i[r].q = i[r].q || []).push(arguments);\n          }),\n          (i[r].l = 1 * new Date());\n        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);\n        a.async = 1;\n        a.src = g;\n        m.parentNode.insertBefore(a, m);\n      })(\n        window,\n        document,\n        \"script\",\n        \"//www.google-analytics.com/analytics.js\",\n        \"ga\"\n      );\n\n      ga(\"create\", \"UA-55888877-1\", \"auto\");\n      ga(\"send\", \"pageview\");\n    </script>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "GET the single user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "238d439b-8277-4f62-b936-0c66d9a562a1",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users/2",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET the single user not found",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5778ee00-9835-40bb-a6b3-5f68a3726aa3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users/23",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET the list of resources",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "fa1206d6-c393-443e-b35c-d487b871fe6d",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/unknown",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"unknown"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET the single resource",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4489a3d4-4593-4faa-8611-d0f8495e28b2",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/unknown/2",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"unknown",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create the User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b56d0cf6-b522-4e99-8a23-292a1811915f",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET the newly added user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users/769",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"769"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET the newly added user Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://reqres.in/api/users/769",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"769"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
